@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a problem with public vmcli documentation or a published client.
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is a preview without public binaries. Please exclude secrets, customer data and sensitive connection details. Report security issues privately through servas.ai.
+  - type: input
+    id: version
+    attributes:
+      label: Release or documentation page
+      description: Give the public version, or the URL of the affected documentation page.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Client operating system and architecture
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the expected behavior and what actually happened. Remove credentials and private connection details.
+    validations:
+      required: true
