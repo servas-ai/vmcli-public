@@ -14,7 +14,7 @@
 
 vmcli is designed to lease a Linux VM in your tenant, run a task, transfer files and remove the VM when the task finishes. The public service will provide tenant limits and a lease expiry through your authorized account.
 
-## Intended customer experience
+## Highlights — planned customer experience
 
 - Download a signed binary from [Releases](https://github.com/servas-ai/vmcli-public/releases), without a GitHub account or access to another repository.
 - Sign in through [auth.servas.ai](https://auth.servas.ai) with the role supplied for your tenant.
@@ -23,7 +23,7 @@ vmcli is designed to lease a Linux VM in your tenant, run a task, transfer files
 
 These are release acceptance criteria, not claims about an available public service. Device-code login and environment selection are planned; their commands will be documented when released.
 
-## Workflow preview
+## Quick start — preview only
 
 The lifecycle syntax below is documented for the forthcoming public release. **It is not a setup or installation guide.** First wait for a signed release and a completed public access acceptance, then follow [installation](docs/installation.md).
 
@@ -36,6 +36,20 @@ vmcli down workspace-example
 ```
 
 Use a unique name for each task. Never delete a VM that belongs to another task. See the complete [usage flow](docs/usage.md) and [agent rules](docs/agents.md).
+
+## Installation status
+
+No public release is available. The first accepted release will provide the
+platform assets below with signed checksums; until then, there is no installer
+to run. See [installation](docs/installation.md) for verification requirements.
+
+| Client platform | Planned asset | Public download |
+| --- | --- | --- |
+| Linux x86-64 | `vmcli-linux-amd64` | Not published |
+| Linux ARM64 | `vmcli-linux-arm64` | Not published |
+| macOS Intel | `vmcli-darwin-amd64` | Not published |
+| macOS Apple silicon | `vmcli-darwin-arm64` | Not published |
+| Windows | Later; not supported in this preview | Not published |
 
 ## Documentation
 
