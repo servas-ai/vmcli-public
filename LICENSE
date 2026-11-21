@@ -1,0 +1,21 @@
+vmcli
+Copyright (c) 2026 servas.ai. All rights reserved.
+
+vmcli is proprietary software. It is free to use with a servas.ai account.
+
+The vmcli binaries published in the releases of this repository may be downloaded,
+installed and run by holders of a servas.ai account to access servas.ai CaaS, or
+another installation they are authorized to use. Use of the service is subject
+to the terms agreed with servas.ai.
+
+You may not redistribute, sell, sublicense, modify, decompile or reverse-engineer
+the vmcli binaries, except where such restrictions are not permitted by
+applicable law. No license to product source code is granted.
+
+The documentation, examples and agent skills in this repository may be copied
+and adapted for the purpose of using vmcli.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT
+PERMITTED BY APPLICABLE LAW.
+
+Contact: https://servas.ai

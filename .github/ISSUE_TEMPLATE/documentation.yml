@@ -1,0 +1,17 @@
+name: Documentation improvement
+description: Suggest an improvement to public installation, usage or agent documentation.
+title: "Docs: "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Documentation page
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+      description: Describe the missing or incorrect information. Exclude secrets and customer data.
+    validations:
+      required: true

@@ -1,0 +1,4 @@
+*.md text eol=lf
+*.yml text eol=lf
+*.pem text eol=lf
+*.png binary
