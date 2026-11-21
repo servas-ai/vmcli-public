@@ -1,0 +1,25 @@
+{
+  "files": {
+    "assets/cover.png": {
+      "size": "1600x900",
+      "sha256": "afde60c845c96e64f209ba812938a3b865968c6df1693a1be12fd5243bc093d7"
+    },
+    "assets/social-preview.png": {
+      "size": "1280x640",
+      "sha256": "8102f408e4389bfc0cc915bbdffc904c1b8ee471767445f18eab245e6c8fbeec"
+    }
+  },
+  "artwork": {
+    "sha256_original": "34f86f3b0a2949dc30bb874b3864d91165b5e781df9dc82aa8c2746855d80f10",
+    "pixel_size": {
+      "width": 1536,
+      "height": 1024
+    },
+    "generator": "ChatGPT web (image generation)",
+    "generated_at": "2026-11-21T18:24:46Z",
+    "rules": "Semantic Glass Cover v2 (pdfcli cover rules)",
+    "brand": "servas",
+    "prompt": "Generate one image in landscape format (3:2, the widest landscape size available). Do not ask questions, generate the image right away.\n\nCreate a single premium editorial 3D glass artwork for a document cover about vmcli, a command-line client that leases throwaway Linux virtual machines for AI agents. The main object is three staggered rounded glass server volumes, the front one opening like a clean empty workspace, with a small rounded glass terminal block on the base that leases them, built from thick clear glass and softly frosted glass, integrated with a restrained composition of rounded rectangular prisms, one curved plane and at most two small spheres. Supporting geometry: a transparent base and one vertical plate. Keep the background seamless white or very pale warm white. Use a warm tangerine orange (around #F98D4A) for selected glass volumes and internal reflections, balanced with transparent and white surfaces. Physical refraction, substantial glass thickness, beautiful beveled edges, soft studio daylight and subtle contact shadows. One coherent central sculpture, lower-middle of frame, with the upper third calm and empty for typography added later. Main object and front edges sharply resolved; distant supports only gently softened. Prioritize precise glass thickness. No text, letters, numbers, logo, watermark, UI, cards, labels, badges, mini-icon rail, collage or contact sheet. One full-resolution image per composition. The artwork is illustrative, not a chart or scientific evidence.\n"
+  },
+  "composition": "artwork normalised to white and multiplied onto #F8F4F0, edges faded; servas.ai logo and text set as type (Aspekta, from servas-ai/pdfcli assets/brands/servas), not generated"
+}
