@@ -12,7 +12,7 @@ vmcli is the command-line client for CaaS virtual machines. The public repositor
 | Linux ARM64 | `vmcli-linux-arm64` | Planned; no public release |
 | macOS Intel | `vmcli-darwin-amd64` | Planned; no public release |
 | macOS Apple silicon | `vmcli-darwin-arm64` | Planned; no public release |
-| Windows | Not yet specified | Later; not approved |
+| Windows x86-64 | `vmcli-windows-amd64.exe` | Planned; no public release |
 
 The initial customer VM scope is Linux. A future client platform release does not imply support for Windows guest VMs.
 
@@ -20,7 +20,11 @@ The existing Linux guest workflow uses OpenSSH and rsync 3.2.3 or newer on the c
 
 ## Planned download route
 
-Customers will download a selected published release from the [public release page](https://github.com/servas-ai/vmcli-public/releases), using a web browser or an ordinary HTTPS download tool. GitHub CLI (`gh`), access to private repositories and compilation are not part of the customer installation path.
+The supported distribution path will use the terminal: a shell installer on Linux/macOS and a PowerShell installer on Windows. Installers will download a selected version from [public releases](https://github.com/servas-ai/vmcli-public/releases) over HTTPS and verify its Ed25519 signature and SHA-256 hashes before installation. GitHub CLI (`gh`), access to private repositories and compilation are not part of the customer installation path.
+
+Homebrew (macOS/Linux), Scoop and winget (Windows) are also planned. Package definitions and exact commands will be published only after their verification and platform acceptance. No working installer or package-manager command is advertised in this preview.
+
+No Windows Authenticode certificate or Apple Developer ID is planned. macOS Apple silicon binaries require the Go toolchain’s ad-hoc signature. Terminal installation does not guarantee execution on managed devices: AppLocker, WDAC, Smart App Control and other organization policies can still prevent unsigned applications from running. Platform behavior must be checked during acceptance.
 
 No release version or executable download command is provided here because no public version has been published. Wait for a release whose notes explicitly approve your platform and the public CaaS connection path.
 
