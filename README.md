@@ -4,7 +4,7 @@
 <p align="center"><strong>Linux virtual machines for agents and development tasks.</strong><br>The command-line client for servas.ai CaaS.</p>
 <p align="center">
 <img alt="Status: preview, no public release" src="https://img.shields.io/badge/status-preview%20%E2%80%94%20no%20public%20release-d99b28">
-<img alt="Planned clients: Linux and macOS" src="https://img.shields.io/badge/planned%20clients-Linux%20%7C%20macOS-0aa2c0">
+<img alt="Planned clients: Linux, macOS and Windows" src="https://img.shields.io/badge/planned%20clients-Linux%20%7C%20macOS%20%7C%20Windows-0aa2c0">
 <img alt="License: proprietary binaries" src="https://img.shields.io/badge/license-proprietary%20binaries-555">
 <a href="docs/agents.md"><img alt="Agent documentation" src="https://img.shields.io/badge/agent%20docs-Claude%20Code%20%7C%20Codex-111"></a>
 </p>
@@ -16,7 +16,7 @@ vmcli is designed to lease a Linux VM in your tenant, run a task, transfer files
 
 ## Highlights — planned customer experience
 
-- Download a signed binary from [Releases](https://github.com/servas-ai/vmcli-public/releases), without a GitHub account or access to another repository.
+- Install from the terminal using signed [release assets](https://github.com/servas-ai/vmcli-public/releases), without a GitHub account or access to another repository.
 - Sign in through [auth.servas.ai](https://auth.servas.ai) with the role supplied for your tenant.
 - Use the public CaaS API and guest connection without a VPN, Tailscale or API key.
 - Create a VM, work in it and explicitly remove your own VM afterward.
@@ -49,7 +49,9 @@ to run. See [installation](docs/installation.md) for verification requirements.
 | Linux ARM64 | `vmcli-linux-arm64` | Not published |
 | macOS Intel | `vmcli-darwin-amd64` | Not published |
 | macOS Apple silicon | `vmcli-darwin-arm64` | Not published |
-| Windows | Later; not supported in this preview | Not published |
+| Windows x86-64 | `vmcli-windows-amd64.exe` | Not published |
+
+Planned distribution: terminal installers for Linux/macOS and PowerShell for Windows, plus Homebrew, Scoop and winget. Every installer must verify Ed25519-signed checksums before installing a binary. No paid platform signing certificate is planned; managed devices may impose additional execution restrictions.
 
 ## Documentation
 
@@ -77,7 +79,7 @@ to run. See [installation](docs/installation.md) for verification requirements.
 | Public endpoint `https://api.caas.servas.ai` | Target endpoint; public access not accepted |
 | Account sign-in, tenant mapping and public SSH | Pending implementation and acceptance |
 | Linux clients (amd64, arm64), macOS clients (amd64, arm64) | Planned; no public installer yet |
-| Windows client | Later; not supported in this preview |
+| Windows client (amd64) | Planned; no public installer yet |
 | Customer VM operating systems | Linux only for the first release |
 | Customer-operated server components | Future planning |
 
